@@ -1,5 +1,4 @@
 //VARIAVEIS//
-alert("Bem-Vindo Sr. Burguer!")
 function pedir() {
     alert("Pedido adicionado ao carrinho!");
 }
