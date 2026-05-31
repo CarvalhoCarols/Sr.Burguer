@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burguer</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   <!-- PRODUTOS DO CARDAPIO -->
+    <section class="container-produto">
+    <div class="produto-card">
+
+
+    <h3>🍔Sr-Bacon</h3>
+        <img src="Imagens/sr-bacon.png" alt="Sr-Bacon">
+    <p>
+        Hambúrguer artesanal, carne 
+        de hamburguer,
+        cheddar, bacon, alface e 
+        tomate.
+
+        
+    </p>
+
+    <span class="preco">
+        <p>R$ 22,90</p>
+    </span>
+        <button class="boot" onclick="adicionarProduto('Sr-Bacon', 22.90)">
+    Adicionar
+</button>
+</div>
+</div>
+    <div class="produto-card">
+    <h3>🍔Sr-Burguer</h3>
+    <img src="Imagens/sr-burguer.png" alt="Sr-Bacon">
+    <p>
+        Hambúrguer artesanal, Dupla
+        Carne Steak
+        bacon crocante,, 
+        Alface, Tomate, Cebola Caramelizada e queijo cheddar.
+    </p>
+    <span class="preco">R$ 40,90</span>
+      <button class="boot" onclick="adicionarProduto('Sr-Burguer', 40.90)">
+    Adicionar
+</button>
+</div>
+    <div class="produto-card">
+    <h3>🍔Sr-Peixe</h3>
+    <img src="Imagens/sr-peixe.png" alt="Sr-Bacon">
+    <p>
+        Hambúrguer artesanal,
+        bacon crocante,
+        queijo cheddar, 
+        Tirinha de Tilapia.
+        Picles (Op. picante), pimenta
+        jalapeno
+    </p>
+    <span class="preco">R$ 31,90</span>
+      <button class="boot" onclick="adicionarProduto('Sr-Peixe', 27.90)">
+    Adicionar
+</button>
+        </div>
+</div>
+
+<div class="produto-card">
+    <h3>🍔Sr-Salada</h3>
+    <img src="Imagens/sr-salada.png" alt="Sr-Bacon">
+    <p>
+        Hambúrguer artesanal,
+        Salada,
+        queijo cheddar.
+        Opcional carne steak, molho especial,
+        picles. Pimenta Jalapeno Opcional
+
+    </p>
+    <span class="preco">R$ 22,90</span>
+        <button class="boot" onclick="adicionarProduto('Sr-Salada', 27.90)">
+    Adicionar
+</button>
+</section>
+<!--CARRINHO DE COMPRAS-->
+    <aside id="carrinho">
+    
+    <h2>🛒 Carrinho</h2>
+
+    <p id="contador">Itens: 0</p>
+
+    <ul id="lista-carrinho"></ul>
+
+    <h3 id="total">Total: R$ 0,00</h3>
+    </aside>
+  
+
+<!-- FUNCAO DE FINALIZAR/LIMPAR  -->
+    <aside class="finalizarPedido">
+        <button class="boot" onclick="finalizarPedido()">
+    📱 Finalizar Pedido
+</button>
+    <button class="boot" onclick="limparCarrinho()">
+    🗑️ Limpar Carrinho
+</button>
+    
+<input
+type="text"
+id="nomeCliente"
+placeholder="Seu nome">
+
+<input
+type="text"
+id="endereco"
+placeholder="Seu endereço">
+
+<select id="pagamento">
+    <option>Pix</option>
+    <option>Dinheiro</option>
+    <option>Cartão</option>
+</select>
+<select id="tipoEntrega">
+    <option>Entrega</option>
+    <option>Retirar no Local</option>
+</select>
+    </aside>
+        
+    
+
+</body>
+<script src="Js/js/scrip.js">
+</script>
+</html>

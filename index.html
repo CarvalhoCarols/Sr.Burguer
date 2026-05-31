@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sr. Burguer</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+    <h1 class="logo">🍔 Sr. Burguer</h1>
+
+    <button id="tema-btn" type="button">🌙</button>
+
+    <button id="menu-btn" type="button">☰</button>
+
+    <nav id="menu">
+        <a href="#inicio">Início</a>
+        <a href="#cardapio">Cardápio</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato">Contato</a>
+    </nav>
+</header>
+
+    <section id="inicio" class="banner">
+        <img src="Imagens/Srburguer-logo.png" alt="Sr.burguer">
+        <h2>O Verdadeiro Sabor da Cidade</h2>
+
+        <p>
+            Hambúrgueres artesanais, pastéis crocantes,
+            galeto assado, sorvetes e o melhor caldo de cana.
+        </p>
+
+        <button><a href="#cardapio">Ver Cardápio</a></button>
+    </section>
+    <section class="destaques">
+
+    <h2>Nossos Destaques</h2>
+
+    <div class="container-produtos">
+
+        <div class="produto">
+            <h3>🍔 Hambúrguer Artesanal</h3>
+            <a href="burguer.html">Pão macio, carne suculenta e muito sabor.</a>
+        </div>
+
+        <div class="produto">
+            <h3>🥟 Pastel Crocante</h3>
+            <a href="pastel.html">Recheios variados e massa crocante.</a>
+        </div>
+
+        <div class="produto">
+            <h3>🍗 Galeto Assado</h3>
+            <a href="galeto.html">Temperado e assado no ponto certo.</a>
+        </div>
+
+
+    </div>
+
+</section>
+    <section id="cardapio">
+        <h2>Nosso Cardápio</h2>
+
+        <div class="container-produtos">
+
+            <div class="produto">
+                <h3>🍔 Hambúrgueres</h3>
+                <a href="burguer.html">Os hamburguers mais gostosos da região!</a>
+            </div>
+            
+
+            <div class="produto">
+                <h3>🥟 Pastéis</h3>
+                <a href="pastel.html">Todos os sabores para você experimentar!</a>
+            </div>
+
+            <div class="produto">
+                <h3>🍗 Galeto</h3>
+                <a href="galeto.html">Galeto assado e suculento</a>
+            </div>
+
+            <div class="produto">
+                <h3>🍦 Sorvetes</h3>
+               <a href="sorvete.html">Diversos sabores para refrescar seu dia.</a>
+            </div>
+
+            <div class="produto">
+                <h3>🥤 Caldo de Cana</h3>
+                <a href="caldo.html">Natual e Geladinho</a>
+            
+            </div>
+
+            <div class="produto">
+            <h3>🍹 Bebidas</h3>
+            <a href="bebidas.html">Para molhar a garganta enquanto saboreia o pedido.</a>
+        </div>
+        
+        </div>
+    </section>
+
+    <section id="sobre">
+        <h2>Sobre Nós</h2>
+
+        <p>
+           O antigo S.r Peixe esta de volta e de cara nova. Com o rebranding do restaurante agora mais sofisticado e com um cardapio novinho para vocês aproveitarem, sempre com o selo de qualidade!
+        </p>
+    </section>
+
+    <section id="contato">
+        <h2>Contato</h2>
+
+        <form>
+            <input type="text" placeholder="Seu nome">
+
+            <input type="tel" placeholder="Seu telefone">
+
+            <textarea placeholder="Sua mensagem"></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2026 Sr. Burguer - Todos os direitos reservados.</p>
+    </footer>
+    <script>
+    const menuBtn = document.getElementById("menu-btn");
+    const menu = document.getElementById("menu");
+
+    menuBtn.addEventListener("click", function () {
+        menu.classList.toggle("ativo");
+    });
+</script>
+<script src="Js/js/scrip.js"></script>
+</body>
+
+
+</html>

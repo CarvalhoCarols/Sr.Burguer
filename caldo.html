@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Caldo_de_Cana</title>
+    <link rel="stylesheet" href="css/style.css"> 
+</head>
+<section class="container-produto">
+<body>
+    <div class="produto-card">
+        <h3>Caldo de Cana</h3>
+        <img src="Imagens/caldo-de-cana.png">
+        <p>Feito na hora para você!</p>
+        <span class="preco">R$ 22,90</span>
+        <button class="boot" onclick="adicionarProduto('Caldo de Cana', 22.90)">
+    Adicionar
+</button>
+</section>
+<!--CARRINHO DE COMPRAS-->
+    <aside id="carrinho">
+    
+    <h2>🛒 Carrinho</h2>
+
+    <p id="contador">Itens: 0</p>
+
+    <ul id="lista-carrinho"></ul>
+
+    <h3 id="total">Total: R$ 0,00</h3>
+    </aside>
+<!-- FUNCAO DE FINALIZAR/LIMPAR  -->
+    <aside class="finalizarPedido">
+        <button class="boot" onclick="finalizarPedido()">
+    📱 Finalizar Pedido
+</button>
+    <button class="boot" onclick="limparCarrinho()">
+    🗑️ Limpar Carrinho
+</button>
+    
+<input
+type="text"
+id="nomeCliente"
+placeholder="Seu nome">
+
+<input
+type="text"
+id="endereco"
+placeholder="Seu endereço">
+
+<select id="pagamento">
+    <option>Pix</option>
+    <option>Dinheiro</option>
+    <option>Cartão</option>
+</select>
+<select id="tipoEntrega">
+    <option>Entrega</option>
+    <option>Retirar no Local</option>
+</select>
+    </aside>
+        
+    
+
+</body>
+<script src="Js/js/scrip.js">
+</script>
+</html>
