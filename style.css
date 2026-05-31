@@ -135,3 +135,12 @@ footer {
     text-align: center;
     padding: 20px;
 }
+
+/* ENTREGA */
+
+.dados-cliente {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
